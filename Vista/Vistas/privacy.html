@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | XP Booster</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Recursos/Img/fire-cape.png">
+    <style>
+        :root {
+            --osrs-green: #1f801f;
+            --osrs-gold: #c5a158;
+            --osrs-dark: #1a1a1a;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        
+        .logo-font {
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, var(--osrs-dark) 0%, var(--osrs-green) 100%);
+        }
+        
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 20px 50px;
+        }
+        
+        .content-section {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 2px solid var(--osrs-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--osrs-gold);
+            margin: 8px 0 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--osrs-green);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #176617;
+            transform: translateY(-2px);
+        }
+        
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1.0s; }
+        .delay-6 { animation-delay: 1.2s; }
+        
+        /* Efecto hover para enlaces */
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--osrs-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        /* Mobile menu button */
+        #menu-toggle {
+            transition: all 0.3s ease;
+        }
+        
+        #mobile-menu {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="header-bg text-white fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="../Recursos/Img/xpbooster.jpeg" alt="XP Booster Logo" class="w-12 h-12 rounded-full border-2 border-yellow-500">
+                <a href="../../index.html" class="logo-font text-sm md:text-xl">XPBooster</a>
+            </div>
+            
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <i class="bi bi-list text-2xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="../../index.html" class="text-white nav-link">Home</a>
+                <a href="../../index.html#services" class="text-white nav-link">Services</a>
+                <a href="about.html" class="text-white nav-link">About Us</a>
+                <a href="terms.html" class="text-white nav-link">Terms</a>
+                <a href="../../index.html#contact" class="text-white nav-link">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 py-4 px-6">
+            <div class="flex flex-col space-y-4">
+                <a href="../../index.html" class="text-white hover:text-yellow-400 py-2 transition-colors">Home</a>
+                <a href="../../index.html#services" class="text-white hover:text-yellow-400 py-2 transition-colors">Services</a>
+                <a href="about.html" class="text-white hover:text-yellow-400 py-2 transition-colors">About Us</a>
+                <a href="terms.html" class="text-white hover:text-yellow-400 py-2 transition-colors">Terms</a>
+                <a href="../../index.html#contact" class="text-white hover:text-yellow-400 py-2 transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <h1 class="text-4xl font-bold text-center mb-8 section-title fade-in">Privacy Policy</h1>
+        
+        <div class="content-section fade-in">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">1. Information We Collect</h2>
+            <p class="text-gray-300 mb-4">We collect information that you provide directly to us, including:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Contact information (name, email address)</li>
+                <li>Old School RuneScape account information necessary to provide our services</li>
+                <li>Transaction and payment details</li>
+                <li>Communications with our support team</li>
+                <li>Service preferences and requirements</li>
+            </ul>
+        </div>
+        
+        <div class="content-section fade-in delay-1">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">2. How We Use Your Information</h2>
+            <p class="text-gray-300 mb-4">We use your information to:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Provide, maintain, and improve our services</li>
+                <li>Process transactions and send related information</li>
+                <li>Respond to your comments, questions, and support requests</li>
+                <li>Send technical notices, updates, and security alerts</li>
+                <li>Monitor and analyze trends, usage, and activities in connection with our services</li>
+                <li>Personalize and improve our services</li>
+            </ul>
+        </div>
+        
+        <div class="content-section fade-in delay-2">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">3. Information Sharing</h2>
+            <p class="text-gray-300 mb-4">We do not sell or rent your personal information to third parties. We may share information with:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Service providers who need access to such information to carry out work on our behalf</li>
+                <li>Legal authorities when required by law or to protect our rights</li>
+                <li>Third parties in connection with or during negotiation of any merger, sale of company assets, financing, or acquisition</li>
+            </ul>
+            <p class="text-gray-300 mt-4">We require all third parties to respect the security of your personal data and to treat it in accordance with the law.</p>
+        </div>
+        
+        <div class="content-section fade-in delay-3">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">4. Information Security</h2>
+            <p class="text-gray-300 mb-4">We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+            <p class="text-gray-300">These measures include:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Encryption of sensitive data</li>
+                <li>Secure server infrastructure</li>
+                <li>Regular security assessments</li>
+                <li>Limited access to personal information on a need-to-know basis</li>
+                <li>Secure payment processing through trusted providers</li>
+            </ul>
+        </div>
+        
+        <div class="content-section fade-in delay-4">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">5. Data Retention</h2>
+            <p class="text-gray-300 mb-4">We retain your personal information only for as long as necessary to fulfill the purposes described in this policy, unless a longer retention period is required or permitted by law.</p>
+            <p class="text-gray-300">Typical retention periods:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Account information: 2 years after last activity</li>
+                <li>Transaction records: 5 years for accounting purposes</li>
+                <li>Communication history: 2 years for customer service reference</li>
+            </ul>
+        </div>
+        
+        <div class="content-section fade-in delay-5">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">6. Your Rights</h2>
+            <p class="text-gray-300 mb-4">You have the right to:</p>
+            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction or deletion of your personal information</li>
+                <li>Object to processing of your personal information</li>
+                <li>Request data portability</li>
+                <li>Withdraw consent at any time where we rely on consent to process your information</li>
+                <li>Lodge a complaint with a supervisory authority</li>
+            </ul>
+            <p class="text-gray-300 mt-4">To exercise any of these rights, please contact us using the information provided in the Contact section.</p>
+        </div>
+        
+        <div class="content-section fade-in delay-6">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">7. Cookies and Tracking Technologies</h2>
+            <p class="text-gray-300 mb-4">We use cookies and similar tracking technologies to track activity on our website and hold certain information.</p>
+            <p class="text-gray-300">Cookies are files with a small amount of data which may include an anonymous unique identifier. They are sent to your browser from a website and stored on your device.</p>
+            <p class="text-gray-300 mt-4">You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service.</p>
+        </div>
+        
+        <div class="content-section fade-in delay-6">
+            <h2 class="text-2xl font-bold mb-4 text-yellow-400">8. Changes to This Policy</h2>
+            <p class="text-gray-300 mb-4">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top of this Privacy Policy.</p>
+            <p class="text-gray-300">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+        </div>
+        
+        <div class="text-center mt-8 fade-in delay-6">
+            <a href="../../index.html" class="btn-primary text-white py-3 px-6 rounded-lg inline-block">Back to Home</a>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 py-8 px-4 border-t border-gray-800 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-sm text-gray-500">© 2023 XPBooster. Not affiliated with Jagex Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

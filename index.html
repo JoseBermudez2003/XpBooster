@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Professional Services | XP Booster</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Vista/Recursos/Img/fire-cape.png">
+    <link rel="stylesheet" href="vista/Recursos/Css/style.css">
+    
+</head>
+<body class="antialiased">
+    <!-- Loader para transiciones -->
+    <div class="loader" id="page-loader">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <header class="header-bg text-white fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="Vista/Recursos/Img/xpbooster.jpeg" alt="XP Booster Logo" class="w-12 h-12 rounded-full border-2 border-yellow-500">
+                <h1 class="logo-font text-sm md:text-xl">XPBooster</h1>
+            </div>
+            
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <i class="bi bi-list text-2xl" id="menu-icon"></i>
+            </button>
+            
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#services" class="text-white nav-link">Services</a>
+                <a href="#testimonials" class="text-white nav-link">Testimonials</a>
+                <a href="#contact" class="text-white nav-link" id="header-contact-link">Contact</a>
+                <a href="#contact" class="btn-contact font-bold py-2 px-6 rounded-lg ml-4" id="header-order-link">Order Service</a>
+            </nav>
+        </div>
+        
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-900">
+            <div class="flex flex-col space-y-4 py-4 px-6">
+                <a href="#services" class="text-white hover:text-yellow-400 py-2 transition-colors">Services</a>
+                <a href="#testimonials" class="text-white hover:text-yellow-400 py-2 transition-colors">Testimonials</a>
+                <a href="#contact" class="text-white hover:text-yellow-400 py-2 transition-colors" id="mobile-contact-link">Contact</a>
+                <a href="#contact" class="btn-contact font-bold py-2 px-4 rounded-lg text-center mt-2" id="mobile-order-link">Order Service</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid mx-auto px-4 pb-16">
+        <section class="hero-gradient pt-32 pb-24 px-4 text-center fade-in">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Professional OSRS Services</h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">Boost your account with our team of Old School RuneScape experts</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">Why Choose Us</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fast Service</h3>
+                    <p class="text-gray-300">Quick turnaround times without compromising on quality</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Account Security</h3>
+                    <p class="text-gray-300">Your account security is our top priority with advanced protection</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-currency-exchange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Best Value</h3>
+                    <p class="text-gray-300">Competitive pricing with premium service quality</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-300">Round-the-clock customer support for all your needs</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">Our Services</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/skill.png" alt="Skill leveling" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Powerleveling</h3>
+                    <p class="text-gray-300 mb-4">We level up your stats quickly, safely, and efficiently with optimized methods.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $10</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+                
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/fire-cape.png" alt="Fire cape" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fire Cape</h3>
+                    <p class="text-gray-300 mb-4">We get your Fire Cape without risks for your account with expert players.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $15</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+                
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/quest.png" alt="Quest" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Questing</h3>
+                    <p class="text-gray-300 mb-4">We complete your quests for you, even the most difficult and lengthy ones.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $8</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+                
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/gold.png" alt="Gold coins" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gold Farming</h3>
+                    <p class="text-gray-300 mb-4">Efficient GP acquisition through safe and reliable methods.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $5</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+                
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/boss.png" alt="OSRS bosses" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Boss Killers</h3>
+                    <p class="text-gray-300 mb-4">We defeat bosses for you to get the best loots and rewards.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $20</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+                
+                <div class="card-service rounded-xl p-6">
+                    <div class="service-img-container mb-4">
+                        <img src="Vista/Recursos/Img/acc.png" alt="Custom accounts" class="service-img">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Accounts</h3>
+                    <p class="text-gray-300 mb-4">We create accounts according to your exact specifications and requirements.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-yellow-400">From $50</span>
+                        <button class="btn-primary text-white py-2 px-4 rounded text-sm hover:shadow-md">Order Service</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">Client Testimonials</h2>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="overflow-hidden relative">
+                    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8 rounded-lg">
+                                <div class="flex items-center mb-6">
+                                    <i class="bi bi-person-circle text-3xl text-yellow-500 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">SlayerKing99</h4>
+                                        <div class="flex text-yellow-400">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 italic">"Excellent service! They farmed me 50M gold in just 3 days without problems. Communication was excellent and they delivered exactly as promised. 100% recommended for any OSRS service."</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8 rounded-lg">
+                                <div class="flex items-center mb-6">
+                                    <i class="bi bi-person-video2 text-3xl text-yellow-500 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">PureZerk</h4>
+                                        <div class="flex text-yellow-400">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 italic">"Got my Fire Cape in less than a day with their service. The player who did it was incredibly professional and kept me informed throughout the process. I will definitely use their services again."</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8 rounded-lg">
+                                <div class="flex items-center mb-6">
+                                    <i class="bi bi-person-video3 text-3xl text-yellow-500 mr-4"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">RuneWife</h4>
+                                        <div class="flex text-yellow-400">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 italic">"They helped me with all the necessary quests for Barrows Gloves. The service was fast, secure, and communication excellent. The only reason I'm not giving a full 5 stars is because it took a little longer than expected, but it was worth the wait."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="prev-btn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-green-800 text-white p-2 rounded-full shadow-lg hover:bg-green-700 focus:outline-none">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button id="next-btn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-green-800 text-white p-2 rounded-full shadow-lg hover:bg-green-700 focus:outline-none">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="indicator-btn w-3 h-3 rounded-full bg-gray-600 focus:outline-none"></button>
+                    <button class="indicator-btn w-3 h-3 rounded-full bg-gray-600 focus:outline-none"></button>
+                    <button class="indicator-btn w-3 h-3 rounded-full bg-gray-600 focus:outline-none"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">Contact Us</h2>
+            
+            <div class="contact-container">
+                <div class="contact-card" id="contact-card">
+                    <h3 class="text-4xl font-bold mb-6 text-center">Get In Touch</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Contact Info -->
+                        <div class="space-y-6" id="contact-info-section">
+                            <div class="contact-item flex items-center">
+                                <div class="mr-4 bg-gray-800 p-3 rounded-full">
+                                    <i class="bi bi-envelope contact-icon text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <a href="mailto:xpboosters07@gmail.com" class="contact-link text-gray-300 hover:text-green-400">
+                                        xpboosters07@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item flex items-center">
+                                <div class="mr-4 bg-gray-800 p-3 rounded-full">
+                                    <i class="bi bi-discord contact-icon text-indigo-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Discord</h4>
+                                    <a href="https://discord.gg/xc7bf77qtA" target="_blank" class="contact-link text-gray-300 hover:text-indigo-400">
+                                        Join Our Discord
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item flex items-center">
+                                <div class="mr-4 bg-gray-800 p-3 rounded-full">
+                                    <i class="bi bi-whatsapp contact-icon text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">WhatsApp</h4>
+                                    <a href="https://wa.me/584128636958" target="_blank" class="contact-link text-gray-300 hover:text-green-400">
+                                        +58 4128636958
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Methods & Business Hours -->
+                        <div class="flex flex-col justify-center text-center">
+                            <h4 class="text-2xl font-bold mb-6 bg-gradient-to-r from-green-400 to-green-600 text-transparent bg-clip-text">
+                                Payment Methods
+                            </h4>
+                            
+                            <div class="flex justify-center space-x-8 mb-6">
+                                <a href="https://www.paypal.com" target="_blank" 
+                                   class="payment-icon bg-gray-800 p-5 rounded-full shadow-md hover:bg-gray-700 transition transform hover:scale-110">
+                                    <i class="bi bi-paypal text-4xl text-blue-400"></i>
+                                </a>
+                                <a href="https://www.binance.com" target="_blank" 
+                                   class="payment-icon bg-gray-800 p-5 rounded-full shadow-md hover:bg-gray-700 transition transform hover:scale-110">
+                                    <i class="bi bi-currency-bitcoin text-4xl text-yellow-400"></i>
+                                </a>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-5 rounded-lg shadow-md border border-green-600/30">
+                                <h4 class="font-bold mb-2 text-green-400">Business Hours</h4>
+                                <p class="text-gray-300">24/7 Support Available</p>
+                                <p class="text-gray-300">Response Time: &lt; 1 hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-12 px-4 border-t border-gray-800">
+        <div class="container mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <h5 class="text-lg font-bold mb-4 flex items-center">
+                    <img src="Vista/Recursos/Img/xpbooster.jpeg" alt="Logo" class="w-10 h-10 rounded-full mr-2 border border-yellow-500">
+                    <span class="logo-font text-sm">XPBooster</span>
+                </h5>
+                <p class="text-gray-400 text-sm">Professional Old School RuneScape services since 2020.</p>
+            </div>
+            <div>
+                <h5 class="text-lg font-bold mb-4">Services</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#services" class="hover:text-yellow-400 transition">Powerleveling</a></li>
+                    <li><a href="#services" class="hover:text-yellow-400 transition">Fire Cape</a></li>
+                    <li><a href="#services" class="hover:text-yellow-400 transition">Questing</a></li>
+                    <li><a href="#services" class="hover:text-yellow-400 transition">Gold Farming</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg font-bold mb-4">Links</h5>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="Vista/Vistas/terms.html" class="hover:text-yellow-400 transition">Terms of Service</a></li>
+                    <li><a href="Vista/Vistas/privacy.html" class="hover:text-yellow-400 transition">Privacy Policy</a></li>
+                    <li><a href="Vista/Vistas/about.html" class="hover:text-yellow-400 transition">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-lg font-bold mb-4">Social Media</h5>
+                <div class="flex space-x-4 mb-4">
+                    <a href="https://discord.gg/xc7bf77qtA" target="_blank" class="text-gray-400 hover:text-yellow-400 text-xl transition">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                    <a href="https://www.facebook.com/EXPBoosters" target="_blank" class="text-gray-400 hover:text-yellow-400 text-xl transition">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.facebook.com/EXPBoosters" target="_blank" class="text-gray-400 hover:text-yellow-400 text-xl transition">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500">© 2023 XPBooster. Not affiliated with Jagex Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Vista/JavaScript/script.js"></script>
+</body>
+</html>
